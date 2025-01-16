@@ -25,7 +25,7 @@
   min-height: 100vh;
   place-items: center;
   background-color: #e40044;
-  background-image: url('https://api.culture.pl/sites/default/files/styles/1920_auto/public/2020-02/obsada_-_the-big-bang-theory.jpg?itok=f7VNJEh2');
+  background: url('../images/bg/hero-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
