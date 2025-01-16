@@ -1,0 +1,262 @@
+.header {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(240, 136, 47);
+}
+
+.header__logo {
+  width: 100px;
+  height: auto;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-left: 3rem;
+}
+
+.header__title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #e40044;
+  text-shadow: -4px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+}
+
+.main {
+  min-height: 100vh;
+  /* border: 5px solid red; */
+  place-items: center;
+  background-color: #e40044;
+  background-image: url(/images/bg/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* background-position-y: 0.1rem; */
+
+  /* object-fit: cover; */
+}
+.hero-title {
+  position: absolute;
+  top: 8rem;
+}
+
+.hero__title {
+  color: gold;
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: -4px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.user__choices {
+  /* border: 5px solid aqua; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  place-items: center;
+  width: 80vw;
+  height: 90vh;
+  position: relative;
+  background-color: rgb(0, 0, 0, 70%);
+  border-radius: 2rem;
+  top: 1rem;
+}
+
+.user-btn {
+  background-color: rgb(240, 83, 44, 70%);
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 150px;
+  cursor: pointer;
+  position: absolute;
+  border-radius: 2rem;
+  z-index: 99;
+}
+
+.btn-images {
+  padding: 0.5rem;
+  transition: rotate 0.3s ease-in-out;
+}
+
+.btn-images:hover {
+  rotate: 45deg;
+}
+
+.rock-btn {
+  left: 0;
+  top: 0;
+}
+
+.paper-btn {
+  top: 0;
+  right: 0;
+}
+
+.scissors-btn {
+  bottom: 0;
+  left: 0;
+}
+
+.scissors__img {
+  transform: rotate(-70deg);
+}
+
+.lizard-btn {
+  bottom: 0;
+  right: 0;
+}
+
+.spock-btn {
+  top: 30%;
+}
+
+.reset-btn {
+  position: absolute;
+  bottom: 0;
+  /* width: fit-content; */
+}
+
+.reset__btn {
+  color: gold;
+  border-radius: 0.2rem;
+  background-color: #e40044;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0 2rem;
+}
+
+.reset__btn:hover {
+  background-color: gold;
+  color: #e40044;
+}
+
+.user__display {
+  position: absolute;
+  left: 10rem;
+  top: 0;
+  right: auto;
+}
+
+.user__score {
+  font-size: 4rem;
+}
+
+.computer__display {
+  position: absolute;
+  right: 10rem;
+  top: 0;
+  left: auto;
+}
+
+.computer__score {
+  font-size: 4rem;
+}
+
+.score__title {
+  color: gold;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: -4px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.win-img {
+  position: absolute;
+  left: 0;
+  right: auto;
+  bottom: 45%;
+  display: none;
+}
+
+.win__img {
+  border-radius: 2rem;
+}
+
+.lose-img {
+  position: absolute;
+  right: 0;
+  bottom: 45%;
+  display: none;
+}
+
+.lose__img {
+  border-radius: 2rem;
+}
+
+.rules {
+  position: absolute;
+  left: auto;
+  right: auto;
+  top: 50%;
+  bottom: 1.5rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  /* border: 5px solid aqua; */
+  width: 250px;
+}
+
+.rules__img {
+  margin-top: -5rem;
+  border-radius: 2.5rem;
+}
+
+.rules__title {
+  color: gold;
+  text-align: center;
+  font-weight: bolder;
+  padding: 1.5rem;
+  margin-top: -2rem;
+}
+
+.rules__list {
+  text-align: center;
+}
+.rules__item {
+  color: rgb(240, 136, 47);
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 0.2rem;
+}
+
+.footer {
+  background-color: rgb(240, 83, 44);
+  display: grid;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.footer__content {
+  display: flex;
+}
+
+.footer h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: aliceblue;
+  text-shadow: -4px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.git__link {
+  font-size: 2rem;
+  font-weight: bold;
+  font-weight: bolder;
+  font-style: italic;
+  color: black;
+  padding-left: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.git__link:hover {
+  color: aqua;
+}
+
+.git__icon {
+  transition: all 0.3s ease-in-out;
+  color: aqua;
+}
+
+.git__link:hover .git__icon {
+  padding-left: 0.5rem;
+  rotate: 10deg;
+  scale: 1.3;
+  color: black;
+}

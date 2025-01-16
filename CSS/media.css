@@ -1,0 +1,343 @@
+@media (max-width: 1230px) {
+  .score__title {
+    font-size: 1.5rem;
+  }
+
+  .user-btn {
+    width: 125px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1134px) {
+  .header__title {
+    font-size: 2.8rem;
+  }
+
+  .header__logo {
+    width: 90px;
+    height: auto;
+    left: -2rem;
+  }
+}
+@media (max-width: 984px) {
+  .header__title {
+    font-size: 2.5rem;
+  }
+
+  .header__logo {
+    width: 80px;
+    height: auto;
+    left: -2rem;
+  }
+
+  .score__title {
+    font-size: 1.2rem;
+  }
+
+  .user__score,
+  .computer__score {
+    font-size: 2.8rem;
+  }
+
+  .hero__title {
+    font-size: 2.5rem;
+  }
+  .win__img {
+    width: 280px;
+    height: auto;
+  }
+
+  .lose__img {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 860px) {
+  .user-btn {
+    width: 100px;
+    font-size: 0.8rem;
+  }
+  .header__title {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 830px) {
+  .user-btn {
+    width: 150px;
+    font-size: 1rem;
+  }
+  .win__img {
+    width: 220px;
+    height: 200px;
+  }
+
+  .lose__img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .hero__title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 784px) {
+  .header__logo {
+    padding-left: none;
+  }
+  .header__title {
+    font-size: 1.8rem;
+  }
+  .user-btn {
+    width: 120px;
+    font-size: 0.8rem;
+  }
+
+  .user__display {
+    left: 8rem;
+  }
+
+  .computer__display {
+    right: 8rem;
+  }
+}
+
+@media (max-width: 730px) {
+  .header__logo {
+    width: 75px;
+  }
+
+  .header__title {
+    font-size: 1.6rem;
+  }
+
+  .win__img {
+    width: 200px;
+    height: 180px;
+  }
+
+  .lose__img {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 652px) {
+  .header__logo {
+    width: 72px;
+  }
+
+  .header__title {
+    font-size: 1.4rem;
+  }
+
+  .win__img {
+    width: 180px;
+    height: 160px;
+  }
+
+  .lose__img {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+@media (max-width: 614px) {
+  .header__title {
+    font-size: 1.4rem;
+  }
+
+  .user-btn {
+    width: 100px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 584px) {
+  .header__title {
+    font-size: 1.4rem;
+  }
+
+  .header__logo {
+    width: 70px;
+    height: auto;
+    left: -2rem;
+  }
+
+  .user-btn {
+    width: 100px;
+    font-size: 0.8rem;
+  }
+
+  .user__display {
+    left: 7rem;
+  }
+
+  .computer__display {
+    right: 7rem;
+  }
+
+  .win__img {
+    width: 160px;
+    height: 140px;
+  }
+
+  .lose__img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .rules__img {
+    width: 200px;
+  }
+
+  .hero__title {
+    font-size: 1.8rem;
+  }
+  /* LOOK OUT FOR MESSUPS */
+  .rules__img {
+    margin-top: -9.5rem;
+  }
+
+  .rules {
+    top: 48%;
+  }
+}
+
+@media (max-width: 530px) {
+  .header__title {
+    font-size: 1.4rem;
+  }
+
+  .user-btn {
+    width: 90px;
+    font-size: 0.6rem;
+  }
+
+  /* MINUS 10PX EACH */
+  .win__img {
+    width: 130px;
+    height: 110px;
+  }
+
+  .lose__img {
+    width: 110px;
+    height: 110px;
+  }
+
+  .header__logo {
+    left: -2.5rem;
+  }
+  .hero__title {
+    font-size: 1.6rem;
+  }
+
+  .user__score,
+  .computer__score {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 496px) {
+  .header__logo {
+    left: -3rem;
+  }
+}
+@media (max-width: 478px) {
+  .header__title {
+    font-size: 1.2rem;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  }
+
+  .header {
+    height: 2rem;
+  }
+}
+
+@media (max-width: 462px) {
+  .spock-btn {
+    top: 25%;
+  }
+  .user__display {
+    left: 6rem;
+  }
+
+  .computer__display {
+    right: 5.5rem;
+  }
+
+  .reset__btn {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 410px) {
+  .header__title {
+    font-size: 1rem;
+  }
+  .user__score,
+  .computer__score {
+    font-size: 1.8rem;
+  }
+
+  .score__title {
+    font-size: 1rem;
+  }
+
+  .hero__title {
+    font-size: 1.4rem;
+  }
+  .rules__img {
+    width: 170px;
+    margin-top: -6rem;
+  }
+
+  .rules {
+    top: 50%;
+  }
+}
+
+@media (max-width: 520px) {
+  .footer__content {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    place-items: center;
+  }
+}
+
+@media (max-width: 375px) {
+  .header__title {
+    font-size: 0.8rem;
+  }
+
+  .hero-title {
+    top: 6.5rem;
+  }
+  .user__score,
+  .computer__score {
+    font-size: 1.4rem;
+  }
+
+  .score__title {
+    font-size: 0.8rem;
+  }
+
+  .rules__img {
+    width: 150px;
+    margin-top: -6rem;
+  }
+  .reset__btn {
+    padding: 0 0.5rem;
+  }
+
+  .win-img {
+    bottom: 42%;
+  }
+
+  .lose-img {
+    bottom: 42%;
+  }
+}
