@@ -23,10 +23,9 @@
 
 .main {
   min-height: 100vh;
-
   place-items: center;
   background-color: #e40044;
-  background-image: url(/images/bg/hero-bg.jpg);
+  background-image: url('/images/bg/hero-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
