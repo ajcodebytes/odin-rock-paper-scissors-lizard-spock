@@ -23,16 +23,13 @@
 
 .main {
   min-height: 100vh;
-  /* border: 5px solid red; */
+
   place-items: center;
   background-color: #e40044;
   background-image: url(/images/bg/hero-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /* background-position-y: 0.1rem; */
-
-  /* object-fit: cover; */
 }
 .hero-title {
   position: absolute;
@@ -47,7 +44,6 @@
 }
 
 .user__choices {
-  /* border: 5px solid aqua; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -61,7 +57,7 @@
 }
 
 .user-btn {
-  background-color: rgb(240, 83, 44, 70%);
+  background-color: rgb(240, 83, 44, 60%);
   font-size: 1.5rem;
   font-weight: bold;
   width: 150px;
@@ -108,24 +104,12 @@
   top: 30%;
 }
 
-.reset-btn {
-  position: absolute;
-  bottom: 0;
-  /* width: fit-content; */
-}
-
-.reset__btn {
+.score__title {
   color: gold;
-  border-radius: 0.2rem;
-  background-color: #e40044;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-weight: bold;
-  padding: 0 2rem;
-}
-
-.reset__btn:hover {
-  background-color: gold;
-  color: #e40044;
+  text-align: center;
+  text-shadow: -4px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .user__display {
@@ -148,14 +132,6 @@
 
 .computer__score {
   font-size: 4rem;
-}
-
-.score__title {
-  color: gold;
-  font-size: 2.5rem;
-  font-weight: bold;
-  text-align: center;
-  text-shadow: -4px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .win-img {
@@ -190,13 +166,8 @@
   display: grid;
   justify-content: center;
   align-items: center;
-  /* border: 5px solid aqua; */
-  width: 250px;
-}
 
-.rules__img {
-  margin-top: -5rem;
-  border-radius: 2.5rem;
+  width: 250px;
 }
 
 .rules__title {
@@ -207,14 +178,28 @@
   margin-top: -2rem;
 }
 
-.rules__list {
-  text-align: center;
+.rules__img {
+  margin-top: -5rem;
+  border-radius: 2.5rem;
 }
-.rules__item {
-  color: rgb(240, 136, 47);
-  font-size: 1.3rem;
+
+.reset-btn {
+  position: absolute;
+  bottom: 0;
+}
+
+.reset__btn {
+  color: gold;
+  border-radius: 0.2rem;
+  background-color: #e40044;
+  font-size: 1.5rem;
   font-weight: bold;
-  padding: 0.2rem;
+  padding: 0 2rem;
+}
+
+.reset__btn:hover {
+  background-color: gold;
+  color: #e40044;
 }
 
 .footer {
