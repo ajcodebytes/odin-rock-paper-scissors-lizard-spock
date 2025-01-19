@@ -15,6 +15,7 @@ const resetBtn = document.querySelector(`.reset__btn`);
 
 let yourScore = 0;
 let sheldonScore = 0;
+let counter = 0;
 
 // GENERATE COMPUTER CHOICE
 function getComputerChoice() {
@@ -27,6 +28,7 @@ function getComputerChoice() {
 
 function win(userChoice, computerChoice) {
   yourScore++;
+  counter++;
   userScore.textContent = yourScore;
   userScore.style.color = 'Green';
   computerScore.style.color = 'Red';
@@ -40,18 +42,21 @@ function win(userChoice, computerChoice) {
 }
 function lose(userChoice, computerChoice) {
   sheldonScore++;
+  counter++;
   computerScore.textContent = sheldonScore;
   computerScore.style.color = 'Green';
   userScore.style.color = 'Red';
   loseImage.style.display = 'Block';
   winImage.style.display = 'None';
-  heroTitle.innerHTML = `${convertWord(userChoice)} beats ${convertWord(
-    computerChoice
+  heroTitle.innerHTML = `${convertWord(computerChoice)} beats ${convertWord(
+    userChoice
   )}`;
   heroTitle.style.color = 'Red';
   audio.play(`./audio/Bazinga_Sound_Effect_128kbps.mp3`);
 }
 function tie(userChoice, computerChoice) {
+  counter++;
+
   heroTitle.innerHTML = `${convertWord(userChoice)} ties with ${convertWord(
     computerChoice
   )}`;
@@ -82,8 +87,6 @@ function convertWord(word) {
   console.log(word);
   return word;
 }
-
-convertWord(`spock`);
 
 // GAME FUNCTION
 
@@ -132,12 +135,17 @@ function game(userChoice, computerChoice) {
 // CLICK USER INTERACTION
 userBtns.forEach((btn) => {
   btn.addEventListener(`click`, function () {
-    // HUMAN CHOICE
-    let userChoice = btn.id;
-    console.log(userChoice);
-    // COMPUTER CHOICE
-    // getComputerChoice();
-
-    game(userChoice, getComputerChoice());
+    if (counter < 7) {
+      // HUMAN CHOICE
+      let userChoice = btn.id;
+      // PLAY ROUND
+      game(userChoice, getComputerChoice());
+      if (counter === 7) {
+        heroTitle.innerHTML = 'Game Over! Try Again ?';
+        heroTitle.style.textAlign = 'center';
+        console.log(`Game Over`);
+      }
+    }
+    // console.log(userChoice);
   });
 });
