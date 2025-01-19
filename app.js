@@ -24,37 +24,68 @@ function getComputerChoice() {
   return computerChoice;
 }
 
-function win() {
+function win(userChoice, computerChoice) {
   yourScore++;
   userScore.textContent = yourScore;
   userScore.style.color = 'Green';
   computerScore.style.color = 'Red';
   winImage.style.display = 'Block';
   loseImage.style.display = 'none';
-  heroTitle.textContent = `YOU WON`;
+  heroTitle.innerHTML = `${convertWord(userChoice)} beats ${convertWord(
+    computerChoice
+  )}`;
   heroTitle.style.color = 'Green';
   winAudio.play(`./audio/Winning_Sound_Effect_128kbps.mp3`);
 }
-function lose() {
+function lose(userChoice, computerChoice) {
   sheldonScore++;
   computerScore.textContent = sheldonScore;
   computerScore.style.color = 'Green';
   userScore.style.color = 'Red';
   loseImage.style.display = 'Block';
   winImage.style.display = 'None';
-  heroTitle.textContent = `SHELDON WON`;
+  heroTitle.innerHTML = `${convertWord(userChoice)} beats ${convertWord(
+    computerChoice
+  )}`;
   heroTitle.style.color = 'Red';
   audio.play(`./audio/Bazinga_Sound_Effect_128kbps.mp3`);
 }
-function tie() {
-  heroTitle.textContent = `It's a TIE. Try Again`;
+function tie(userChoice, computerChoice) {
+  heroTitle.innerHTML = `${convertWord(userChoice)} ties with ${convertWord(
+    computerChoice
+  )}`;
   heroTitle.style.color = 'Gold';
   winImage.style.display = 'None';
   loseImage.style.display = 'none';
   console.log(`TIE`);
 }
 
+function convertWord(word) {
+  switch (word) {
+    case `r`:
+      word = `Rock`;
+      break;
+    case `p`:
+      word = `Paper`;
+      break;
+    case `s`:
+      word = `Scissors`;
+      break;
+    case `l`:
+      word = `Lizard`;
+      break;
+    case `spock`:
+      word = `Spock`;
+      break;
+  }
+  console.log(word);
+  return word;
+}
+
+convertWord(`spock`);
+
 // GAME FUNCTION
+
 function game(userChoice, computerChoice) {
   switch (userChoice + computerChoice) {
     // WIN
@@ -69,7 +100,7 @@ function game(userChoice, computerChoice) {
     case `spockr`:
     case `rs`:
       console.log(`WIN`);
-      win();
+      win(userChoice, computerChoice);
       break;
     // LOSE
     case `ps`:
@@ -83,7 +114,7 @@ function game(userChoice, computerChoice) {
     case `rspock`:
     case `sr`:
       console.log(`LOSE`);
-      lose();
+      lose(userChoice, computerChoice);
       break;
     // TIE
     case `pp`:
@@ -92,7 +123,7 @@ function game(userChoice, computerChoice) {
     case `spockspock`:
     case `ss`:
       console.log(`TIE`);
-      tie();
+      tie(userChoice, computerChoice);
       break;
   }
 }
@@ -105,6 +136,7 @@ userBtns.forEach((btn) => {
     console.log(userChoice);
     // COMPUTER CHOICE
     // getComputerChoice();
+
     game(userChoice, getComputerChoice());
   });
 });
