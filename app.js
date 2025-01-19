@@ -1,3 +1,4 @@
+// DOM CACHE
 const computerScore = document.querySelector(`.computer__score`);
 const userScore = document.querySelector(`.user__score`);
 
